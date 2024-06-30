@@ -1,9 +1,17 @@
 import React from 'react'
+import Alert from 'react-bootstrap/Alert';
+
 
 function NotFound() {
   return (
     <div>
-        <h1>ERROR, PÁGINA NO ENCONTRADA</h1>
+        <>
+        <Alert key='danger' variant='danger'>
+          <strong>¡ERROR!</strong>
+          <br/>
+          ESTA PAGINA NO EXISTE
+        </Alert>
+    </>
     </div>
   )
 }
